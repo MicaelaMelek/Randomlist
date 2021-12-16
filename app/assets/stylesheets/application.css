@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.btn-green {
+    color: #fff;
+    background-color: #1DB954;
+    border-color: #1DB954;
+}
+
+.green-color {
+    color: #1DB954;
+}
+
+.btn-outline-green {
+    color: #1DB954;
+    border-color: #1DB954;
+}
+
+.form-control:focus, .btn:focus {
+    border-color: #1db95421;
+    box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.13);
+}
+
+.form-check-input:focus {
+    border-color: #1db95421;
+    box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.13);
+}
+
+.form-check-input:checked {
+    background-color: #1DB954;
+    border-color: #1DB954;
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(29, 185, 84, 0.60)'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input:checked {
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.bi-shuffle, .bi-check-circle, .navbar-light .navbar-nav .nav-link:hover, a {
+    color: #1DB954;
+}
+
+.bi-x-circle {
+    color: red;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #e3f8e5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.spotify-sign-in a {
+    font-size: 1.25rem;
+}
+
+@keyframes animateWave {
+    0% {
+        transform: scale(1,0);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+.wave-container > svg {
+    display: block;
+    transform-origin: top;
+    animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

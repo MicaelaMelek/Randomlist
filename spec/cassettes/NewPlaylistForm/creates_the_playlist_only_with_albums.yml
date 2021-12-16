@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/albums?ids=4uUAUqIfSomFTbbjGp3TYp
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.6.5p114
+      Authorization:
+      - Bearer
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=72309
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 14 Dec 2021 20:50:54 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Tue, 14 Dec 2021 20:50:54 GMT
+recorded_with: VCR 5.0.0

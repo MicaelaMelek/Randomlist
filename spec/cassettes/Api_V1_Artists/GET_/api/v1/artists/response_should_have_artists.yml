@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=20&offset=0&q=Taylor&type=artist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.6.5p114
+      Authorization:
+      - Bearer
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Sun, 05 Dec 2021 20:51:55 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Sun, 05 Dec 2021 20:51:56 GMT
+recorded_with: VCR 5.0.0
